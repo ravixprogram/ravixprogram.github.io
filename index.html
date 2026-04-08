@@ -236,7 +236,7 @@
       filter:drop-shadow(0 0 25px rgba(159,123,255,.18));
     }
     .subtitle{
-      max-width:650px;
+      max-width:760px;
       font-size:clamp(16px,2.1vw,21px); line-height:1.6;
       color:var(--muted); margin-bottom:24px;
     }
@@ -251,7 +251,7 @@
       border:1px solid rgba(255,255,255,.09);
     }
     .stat strong{display:block; font-size:18px; margin-bottom:6px}
-    .stat span{font-size:13px; color:var(--muted)}
+    .stat span{font-size:12px; color:var(--muted); line-height:1.5}
 
     .hero-visual{
       min-height:560px;
@@ -427,6 +427,7 @@
     .help{
       color:var(--muted); font-size:14px; line-height:1.7; margin-top:10px;
     }
+    .help:empty{display:none}
 
     @media (max-width: 980px){
       .hero-grid, .download, .cards{grid-template-columns:1fr}
@@ -528,12 +529,18 @@
       <section id="about">
         <div class="container">
           <div class="section-head" data-reveal>
-            <div class="kicker" data-i18n="aboutKicker">о проекте</div>
-            <h2 data-i18n="aboutTitle">Дизайн под твою историю</h2>
+            <div class="kicker" data-i18n="aboutKicker">об игре</div>
+            <h2 data-i18n="aboutTitle">Об игре</h2>
             <p class="section-copy" data-i18n="aboutText">
-              Эта страница сделана как атмосферный лендинг для визуальной новеллы:
-              неоновые блики, стеклянные панели, медленные анимации, селектор языка
-              и блоки скачивания, чтобы сайт выглядел как реальная страница релиза.
+              The Limit of Looped Eternity — атмосферная визуальная новелла о городе,
+              застрявшем в одном моменте времени. Компания друзей приезжает туда,
+              чтобы отдохнуть от повседневной жизни, но очень быстро понимает:
+              с этим местом что-то не так. Часы остановились, солнце не движется,
+              а жители ведут себя так, будто всё происходящее совершенно нормально.
+              Чем дольше герои остаются здесь, тем сильнее стирается сама цель их
+              приезда. Игроку предстоит шаг за шагом раскрыть тайну города,
+              столкнуться с его странными правилами и решить, стоит ли бороться
+              за возвращение в обычное время.
             </p>
           </div>
 
@@ -574,8 +581,8 @@
             <div class="kicker" data-i18n="downloadKicker">скачивание</div>
             <h2 data-i18n="downloadTitle">Скачать новеллу</h2>
             <p class="section-copy" data-i18n="downloadText">
-              Ниже — готовые карточки под разные платформы. Просто замени ссылки
-              внутри кнопок на свои реальные файлы или страницы загрузки.
+              Выбери свою платформу и начни путешествие в город, где время больше
+              не течёт как прежде.
             </p>
 
             <div class="download-grid">
@@ -608,10 +615,7 @@
               </div>
             </div>
 
-            <p class="help" data-i18n="helpText">
-              Подсказка: если хочешь, сюда легко добавить ещё скриншоты, описание
-              персонажей, системные требования и changelog.
-            </p>
+            
           </div>
 
           <div class="panel lang-note" data-reveal>
@@ -661,43 +665,43 @@
         navDownload:"Скачать",
         eyebrow:"Мистическая визуальная новелла",
         title:"The Limit of<br>Looped Eternity",
-        subtitle:"Город застрял в одном часе. Солнце не движется. Часы не идут. Но чем дольше ты остаёшься, тем сильнее забываешь, зачем пришёл.",
+        subtitle:"Город застрял в одном часе. Солнце не движется, часы не идут, а чем дольше ты остаёшься здесь, тем сильнее забываешь, зачем пришёл.",
         ctaDownload:"Скачать игру",
         ctaStory:"О сюжете",
         stat1Value:"3 языка",
         stat1Label:"Русский, English, Polski",
         stat2Value:"Атмосфера",
         stat2Label:"Застывшее время и тайны",
-        stat3Value:"Ren'Py",
-        stat3Label:"Идеально для страницы новеллы",
+        stat3Value:"Выбор и последствия",
+        stat3Label:"Решения игрока могут изменить ход истории",
         frozen:"time: frozen",
-        aboutKicker:"о проекте",
-        aboutTitle:"Дизайн под твою историю",
-        aboutText:"Эта страница сделана как атмосферный лендинг для визуальной новеллы: неоновые блики, стеклянные панели, медленные анимации, селектор языка и блоки скачивания, чтобы сайт выглядел как реальная страница релиза.",
-        card1Title:"Застывшее время",
-        card1Text:"Центральная круговая композиция с часами и закатом подчёркивает идею города, который застрял в одном моменте.",
-        card2Title:"Плавные анимации",
-        card2Text:"Частицы, свечение, мягкий параллакс и появление блоков при прокрутке делают страницу более живой и современно выглядящей.",
-        card3Title:"Выбор языка",
-        card3Text:"Вверху есть переключатель RU / EN / PL. Текст страницы меняется без перезагрузки, что удобно для игроков из разных стран.",
+        aboutKicker:"об игре",
+        aboutTitle:"Об игре",
+        aboutText:"The Limit of Looped Eternity — атмосферная визуальная новелла о городе, застрявшем в одном моменте времени. Компания друзей приезжает туда, чтобы отдохнуть от повседневной жизни, но очень быстро понимает: с этим местом что-то не так. Часы остановились, солнце не движется, а жители ведут себя так, будто всё происходящее совершенно нормально. Чем дольше герои остаются здесь, тем сильнее стирается сама цель их приезда. Игроку предстоит шаг за шагом раскрыть тайну города, столкнуться с его странными правилами и решить, стоит ли бороться за возвращение в обычное время.",
+        card1Title:"Застывший город",
+        card1Text:"Тихие улицы, остановившиеся часы и неподвижное солнце создают ощущение места, которое больше не живёт по обычным законам времени.",
+        card2Title:"Тайна и напряжение",
+        card2Text:"С каждой новой сценой привычная реальность трескается всё сильнее, а чувство неправильности происходящего только нарастает.",
+        card3Title:"Выбор игрока",
+        card3Text:"Тебе предстоит не только наблюдать за происходящим, но и принимать решения, от которых зависит путь героев через этот странный город.",
         downloadKicker:"скачивание",
         downloadTitle:"Скачать новеллу",
-        downloadText:"Ниже — готовые карточки под разные платформы. Просто замени ссылки внутри кнопок на свои реальные файлы или страницы загрузки.",
+        downloadText:"Выбери свою платформу и начни путешествие в город, где время больше не течёт как прежде.",
         winTitle:"Версия для Windows",
         winDesc:"Основная сборка для ПК.",
         androidTitle:"Версия для Android",
         androidDesc:"Удобно для мобильного прохождения.",
         trailerTitle:"Трейлер / тизер",
-        trailerDesc:"Можно поставить ссылку на YouTube.",
+        trailerDesc:"Официальный ролик, который передаёт атмосферу новеллы.",
         patchTitle:"Патч / обновления",
         patchDesc:"Отдельная секция под фиксы и новые версии.",
         downloadNow:"Скачать",
         watchTrailer:"Смотреть",
         openUpdates:"Открыть",
-        helpText:"Подсказка: если хочешь, сюда легко добавить ещё скриншоты, описание персонажей, системные требования и changelog.",
+        helpText:"",
         langKicker:"локализация",
         langTitle:"Поддержка трёх языков",
-        langText:"Сайт уже поддерживает русский, английский и польский. Это удобно, если ты хочешь выкладывать новеллу не только для своей аудитории.",
+        langText:"Страница доступна на русском, английском и польском, чтобы игроки из разных стран могли познакомиться с новеллой без лишних препятствий.",
         langRu:"Русский",
         langRuStatus:"Готово",
         langEn:"English",
@@ -712,43 +716,43 @@
         navDownload:"Download",
         eyebrow:"Mystery visual novel",
         title:"The Limit of<br>Looped Eternity",
-        subtitle:"A city is trapped in a single hour. The sun does not move. The clocks do not tick. And the longer you stay, the more you forget why you came.",
+        subtitle:"A city is trapped in a single hour. The sun does not move, the clocks do not tick, and the longer you stay, the more you forget why you came.",
         ctaDownload:"Download game",
         ctaStory:"About story",
         stat1Value:"3 languages",
         stat1Label:"Russian, English, Polish",
         stat2Value:"Atmosphere",
         stat2Label:"Frozen time and secrets",
-        stat3Value:"Ren'Py",
-        stat3Label:"Perfect for a VN landing page",
+        stat3Value:"Choices and consequences",
+        stat3Label:"Your decisions can change the course of the story",
         frozen:"time: frozen",
-        aboutKicker:"about project",
-        aboutTitle:"A design built for your story",
-        aboutText:"This page is made as an atmospheric landing page for a visual novel: neon glows, glassmorphism panels, slow ambient animation, a language selector, and download blocks so it feels like a real release page.",
-        card1Title:"Frozen time",
-        card1Text:"The circular composition with the clock and sunset highlights the idea of a city trapped in a single moment.",
-        card2Title:"Smooth animation",
-        card2Text:"Particles, glowing elements, soft parallax, and reveal-on-scroll make the page feel alive and more modern.",
-        card3Title:"Language switch",
-        card3Text:"There is a RU / EN / PL switch at the top. The page text changes instantly without reloading, which is great for players from different countries.",
+        aboutKicker:"about the game",
+        aboutTitle:"About the Game",
+        aboutText:"The Limit of Looped Eternity is an atmospheric visual novel about a city trapped in a single moment of time. A group of friends arrives there hoping for a quiet break from everyday life, but almost immediately they notice that something is deeply wrong. The clocks have stopped, the sun refuses to move, and the townspeople act as if all of it is perfectly normal. The longer the heroes remain, the more the very reason for their arrival begins to fade. The player must uncover the mystery of the city, face its strange rules, and decide whether to fight for a way back into living time.",
+        card1Title:"A frozen city",
+        card1Text:"Silent streets, stopped clocks, and an unmoving sun create the feeling of a place that no longer obeys the usual laws of time.",
+        card2Title:"Mystery and tension",
+        card2Text:"With every new scene, ordinary reality cracks a little more, and the sense that something is deeply wrong keeps growing.",
+        card3Title:"Player choice",
+        card3Text:"You do not simply watch events unfold — you make decisions that shape how the heroes move through this strange city.",
         downloadKicker:"download",
         downloadTitle:"Download the novel",
-        downloadText:"Below are ready-made platform cards. Just replace the button links with your real files or release pages.",
+        downloadText:"Choose your platform and begin the journey into a city where time no longer flows as it should.",
         winTitle:"Windows version",
         winDesc:"Main desktop build.",
         androidTitle:"Android version",
         androidDesc:"Comfortable for mobile playthrough.",
         trailerTitle:"Trailer / teaser",
-        trailerDesc:"You can place a YouTube link here.",
+        trailerDesc:"An official trailer that captures the mood of the novel.",
         patchTitle:"Patch / updates",
         patchDesc:"A separate block for fixes and new versions.",
         downloadNow:"Download",
         watchTrailer:"Watch",
         openUpdates:"Open",
-        helpText:"Tip: you can easily add screenshots, character descriptions, system requirements, and a changelog here.",
+        helpText:"",
         langKicker:"localization",
         langTitle:"Support for three languages",
-        langText:"The site already supports Russian, English, and Polish. That is useful if you want to release the novel beyond your main audience.",
+        langText:"The page is available in Russian, English, and Polish so players from different countries can discover the novel more easily.",
         langRu:"Russian",
         langRuStatus:"Ready",
         langEn:"English",
@@ -763,43 +767,43 @@
         navDownload:"Pobierz",
         eyebrow:"Tajemnicza visual novel",
         title:"The Limit of<br>Looped Eternity",
-        subtitle:"Miasto utknęło w jednej godzinie. Słońce się nie porusza. Zegary nie tykają. A im dłużej zostajesz, tym bardziej zapominasz, po co tu przyszedłeś.",
+        subtitle:"Miasto utknęło w jednej godzinie. Słońce się nie porusza, zegary nie tykają, a im dłużej zostajesz, tym bardziej zapominasz, po co tu przyszedłeś.",
         ctaDownload:"Pobierz grę",
         ctaStory:"O historii",
         stat1Value:"3 języki",
         stat1Label:"Rosyjski, English, Polski",
         stat2Value:"Klimat",
         stat2Label:"Zatrzymany czas i tajemnice",
-        stat3Value:"Ren'Py",
-        stat3Label:"Idealne dla strony visual novel",
+        stat3Value:"Wybory i konsekwencje",
+        stat3Label:"Decyzje gracza mogą zmienić przebieg historii",
         frozen:"time: frozen",
-        aboutKicker:"o projekcie",
-        aboutTitle:"Projekt dopasowany do twojej historii",
-        aboutText:"Ta strona została przygotowana jako klimatyczny landing page dla visual novel: neonowe poświaty, szklane panele, powolne animacje, wybór języka i bloki pobierania, żeby wyglądała jak prawdziwa strona premiery.",
-        card1Title:"Zatrzymany czas",
-        card1Text:"Centralna kompozycja z zegarem i zachodem słońca podkreśla ideę miasta uwięzionego w jednej chwili.",
-        card2Title:"Płynne animacje",
-        card2Text:"Cząsteczki, poświata, delikatny paralaks i pojawianie się sekcji przy przewijaniu sprawiają, że strona wygląda nowocześnie i żywo.",
-        card3Title:"Wybór języka",
-        card3Text:"Na górze znajduje się przełącznik RU / EN / PL. Tekst zmienia się bez przeładowania, co jest wygodne dla graczy z różnych krajów.",
+        aboutKicker:"o grze",
+        aboutTitle:"O grze",
+        aboutText:"The Limit of Looped Eternity to klimatyczna visual novel o mieście uwięzionym w jednym momencie czasu. Grupa przyjaciół przyjeżdża tam, by odpocząć od codzienności, lecz bardzo szybko odkrywa, że z tym miejscem dzieje się coś niepokojącego. Zegary stanęły, słońce nie przesuwa się po niebie, a mieszkańcy zachowują się tak, jakby wszystko było całkowicie normalne. Im dłużej bohaterowie zostają, tym bardziej zaciera się sam powód ich przyjazdu. Gracz będzie odkrywać tajemnicę miasta, mierzyć się z jego dziwnymi zasadami i zdecydować, czy warto walczyć o powrót do zwykłego czasu.",
+        card1Title:"Zatrzymane miasto",
+        card1Text:"Ciche ulice, stojące zegary i nieruchome słońce budują wrażenie miejsca, które przestało podlegać zwykłym prawom czasu.",
+        card2Title:"Tajemnica i napięcie",
+        card2Text:"Z każdą kolejną sceną zwyczajna rzeczywistość coraz bardziej pęka, a poczucie, że coś jest tu bardzo nie tak, tylko rośnie.",
+        card3Title:"Wybory gracza",
+        card3Text:"Nie tylko obserwujesz wydarzenia — podejmujesz decyzje, które wpływają na drogę bohaterów przez to dziwne miasto.",
         downloadKicker:"pobieranie",
         downloadTitle:"Pobierz nowelę",
-        downloadText:"Poniżej są gotowe karty dla różnych platform. Wystarczy podmienić linki w przyciskach na prawdziwe pliki albo strony pobierania.",
+        downloadText:"Wybierz swoją platformę i rozpocznij podróż do miasta, w którym czas przestał płynąć tak jak dawniej.",
         winTitle:"Wersja na Windows",
         winDesc:"Główna wersja na komputer.",
         androidTitle:"Wersja na Android",
         androidDesc:"Wygodna do grania na telefonie.",
         trailerTitle:"Trailer / teaser",
-        trailerDesc:"Możesz tu dodać link do YouTube.",
+        trailerDesc:"Oficjalny trailer oddający klimat noweli.",
         patchTitle:"Patch / aktualizacje",
         patchDesc:"Osobna sekcja na poprawki i nowe wersje.",
         downloadNow:"Pobierz",
         watchTrailer:"Oglądaj",
         openUpdates:"Otwórz",
-        helpText:"Wskazówka: łatwo możesz tu dodać screeny, opisy postaci, wymagania systemowe i changelog.",
+        helpText:"",
         langKicker:"lokalizacja",
         langTitle:"Obsługa trzech języków",
-        langText:"Strona już obsługuje rosyjski, angielski i polski. To wygodne, jeśli chcesz udostępnić nowelę także poza swoją główną publicznością.",
+        langText:"Strona jest dostępna po rosyjsku, angielsku i polsku, aby gracze z różnych krajów mogli łatwiej poznać tę nowelę.",
         langRu:"Rosyjski",
         langRuStatus:"Gotowe",
         langEn:"English",
